@@ -1,0 +1,130 @@
+<html>
+<!--Åbne tag-->
+
+<head>
+    <!--Åbne tag-->
+    <title>Forside</title>
+    <style>
+        button>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            height: 200vh;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        #kasse {
+            width: 425px;
+            background-color: hotpink;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #kasse:hover {
+            animation-name: example;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            10% {
+                background-color: hotpink;
+            }
+
+            20% {
+                background-color: indigo;
+            }
+
+            30% {
+                background-color: red;
+            }
+
+            40% {
+                background-color: yellowgreen;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            60% {
+                background-color: green;
+            }
+
+            70% {
+                background-color: saddlebrown;
+            }
+
+            80% {
+                background-color: burlywood;
+            }
+
+            90% {
+                background-color: aqua;
+            }
+
+            100% {
+                background-color: rosybrown;
+            }
+        }
+    </style>
+</head>
+<!--Lukke tag-->
+
+<body>
+    <!--Åbne tag-->
+    <div id="kasse">
+        <h1 class="red">Hello world!</h1>
+        <h1 class="green">Nice to see you!</h1>
+        <h1 class="red">Hello world!</h1>
+        <h1 class="green">Nice to see you!</h1>
+    </div>
+
+    <div id="demo">
+
+    </div>
+
+    <button>
+        <a href="https://www.oese.dk" id="oese">Øse Efterskole</a>
+    </button>
+
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+    <audio id="Defuse">
+        <source src="defuse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        var price1 = 6;
+        var price2 = 6;
+        var total = price1 + price2;
+
+        document.getElementById("demo").innerHTML =
+            "The total is: " + total;
+
+        var x = document.getElementById("Defuse");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+    </script>
+</body>
+<!--Lukke tag-->
+
+</html>
+<!--Lukke tag-->
